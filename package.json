@@ -1,6 +1,6 @@
 {
   "name": "nx-uvu",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "An Nx executor for the uvu test runner",
   "main": "impl.js",
   "scripts": {
