@@ -47,7 +47,7 @@ There's some configuration options you can make use of with this executor to hel
 | Option | Type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | rootDir | string | null | true | The root directory to run the uvu command from. |
-| pattern | string | "(test\|spec)\\.(j\|t)" | false | The test pattern to pass to the uvu CLI |
+| pattern | string | "(test\|spec)\\.(j\|t)s" | false | The test pattern to pass to the uvu CLI |
 | coverage | boolean | false | false | Whether or not c8 should be used to collect coverage. Keep this false if you'd rather use `nyc` or your own coverage collector |
 | coverageConfig | string | null | false | The path to the c8 config file |
 | typescript | boolean | true | false | If you'd like to use typescript files for your tests. This will automatically use `ts-node` |
