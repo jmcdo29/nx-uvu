@@ -1,4 +1,5 @@
 import { getPackageManagerCommand, logger } from '@nrwl/devkit';
+import { style } from '@ogma/styler';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 
@@ -48,7 +49,9 @@ export default async function uvuExecutor(options: UvuOptions) {
     const fullCommand = `${getPackageManagerCommand().exec} ${command} ${args} ${options.rootDir} ${
       options.pattern
     }`;
-    logger.debug(`Running command '${fullCommand}'`);
+    logger.debug(
+      `${style.whiteBg.apply('nx-uvu')} Running command '${style.cyan.apply(fullCommand)}'\n`,
+    );
     const { stderr, stdout } = await promisify(exec)(fullCommand);
     if (stderr) {
       logger.error(stderr);
