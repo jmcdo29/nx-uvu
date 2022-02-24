@@ -50,7 +50,7 @@ export default async function uvuExecutor(options: UvuOptions) {
       options.pattern
     }`;
     logger.debug(
-      `${style.whiteBg.apply('nx-uvu')} Running command '${style.cyan.apply(fullCommand)}'\n`,
+      `${style.whiteBg.black.apply('nx-uvu')} Running command '${style.cyan.apply(fullCommand)}'\n`,
     );
     const { stderr, stdout } = await promisify(exec)(fullCommand);
     if (stderr) {
