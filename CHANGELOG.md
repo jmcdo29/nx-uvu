@@ -1,5 +1,11 @@
 # nx-uvu
 
+## 1.1.1
+
+### Patch Changes
+
+- 59b4bd5: Fix the text in the white block
+
 ## 1.1.0
 
 ### Minor Changes
