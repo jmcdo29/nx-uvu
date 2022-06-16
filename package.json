@@ -39,7 +39,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@nrwl/devkit": "^13.8.3",
+    "@nrwl/devkit": "^14.3.6",
     "@ogma/styler": "^1.0.0"
   }
 }
