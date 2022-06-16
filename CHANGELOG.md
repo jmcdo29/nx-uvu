@@ -1,5 +1,11 @@
 # nx-uvu
 
+## 1.2.0
+
+### Minor Changes
+
+- 8b23c96: update nrwl/devkit to 14
+
 ## 1.1.1
 
 ### Patch Changes
