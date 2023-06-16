@@ -36,6 +36,10 @@
       "description": "If tsconfig-paths should be registered. This will only be register if \"typescript\" is true and \"useSwc\" is false",
       "default": true
     },
+    "tsconfigPath": {
+      "type": "string",
+      "description": "The custom path to the tsconfig, if there is one"
+    },
     "runtimeArgs": {
       "type": "array",
       "description": "Other arguments that should be ran by using the -r hook",
