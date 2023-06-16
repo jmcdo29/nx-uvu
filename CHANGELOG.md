@@ -1,5 +1,11 @@
 # nx-uvu
 
+## 1.3.0
+
+### Minor Changes
+
+- 3cdefc7: Update to nx 16 and support custom tsconfig path
+
 ## 1.2.0
 
 ### Minor Changes
