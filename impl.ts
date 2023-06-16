@@ -1,4 +1,4 @@
-import { getPackageManagerCommand, logger } from '@nrwl/devkit';
+import { getPackageManagerCommand, logger } from '@nx/devkit';
 import { style } from '@ogma/styler';
 import { exec } from 'child_process';
 import { promisify } from 'util';
@@ -10,6 +10,7 @@ interface UvuOptions {
   coverageConfig?: string;
   typescript: boolean;
   tsconfigPaths: boolean;
+  tsconfigPath?: string;
   runtimeArgs?: string[];
   color: boolean;
   useSwc: boolean;
@@ -44,6 +45,9 @@ export default async function uvuExecutor(options: UvuOptions) {
   if (!options.color) {
     process.env.FORCE_COLOR = '0';
     args += '-c=false ';
+  }
+  if (options.typescript && !options.useSwc && options.tsconfigPath) {
+    args += `--project ${options.tsconfigPath} `;
   }
   try {
     const fullCommand = `${getPackageManagerCommand().exec} ${command} ${args} ${options.rootDir} ${
