@@ -1,5 +1,11 @@
 # nx-uvu
 
+## 1.3.1
+
+### Patch Changes
+
+- 9979f95: Add repository information to package.json
+
 ## 1.3.0
 
 ### Minor Changes
