@@ -8,18 +8,12 @@
     "lint": "eslint --ext ts .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "impl.js",
-    "schema.json",
-    "executor.json"
-  ],
-  "keywords": [
-    "nx",
-    "uvu",
-    "test",
-    "test-runner",
-    "executor"
-  ],
+  "files": ["impl.js", "schema.json", "executor.json"],
+  "keywords": ["nx", "uvu", "test", "test-runner", "executor"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmcdo29/nx-uvu.git"
+  },
   "author": "Jay McDoniel <me@jaymcdoniel.dev>",
   "license": "MIT",
   "executors": "./executor.json",
